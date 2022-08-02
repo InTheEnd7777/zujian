@@ -1,28 +1,47 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <gz-btn>登录</gz-btn>
+    <gz-btn type="success">注册</gz-btn>
+    <gz-gogo></gz-gogo>
+    <gz-gogo type="bashi"></gz-gogo>
+    <gz-gogo type="wushi"></gz-gogo>
+    <gz-gogo type="ershi"></gz-gogo>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  data() {
+    return {};
+  },
+  created() {},
+
+  methods: {},
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style scoped>
+    html,
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    circle {
+        transition: stroke-dashoffset 0.15s;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+    }
+    .txt{
+		font-size: 14px;
+		text-align: center;
+    }
+    .loading{
+    	padding:40vh;
+    }
+    </style>
+
